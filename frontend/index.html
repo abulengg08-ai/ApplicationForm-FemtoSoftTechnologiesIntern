@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Femtosoft Technologies | Internship & Training Platform</title>
+  <meta name="description" content="Femtosoft Technologies is a leading provider of internship and training programs.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Toast Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo">
+        <img src="assets/logo.png" alt="Femtosoft Technologies Logo" class="site-logo-img">
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#domains" class="nav-link">Domains</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <button class="btn btn-primary-red js-open-apply">Apply Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-pill">
+          <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+          <span>INTERNSHIP NOW OPEN</span>
+        </div>
+        <h1 class="hero-title">
+          Launch Your Career with <span class="text-blue">Femtosoft</span> <span class="text-red">Technologies</span>
+        </h1>
+        <p class="hero-subtitle">
+          Gain real-world experience, work on live projects, and develop industry-ready skills with the engineering leaders of tomorrow.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary-red js-open-apply">Apply Now</button>
+          <a href="#domains" class="btn btn-outline-red">Explore Domains</a>
+        </div>
+      </div>
+
+      <div class="hero-visual-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/hero-office.jpg" alt="Femtosoft Office">
+          
+          <div class="floating-badge badge-top-right">
+            <div class="badge-icon-box blue">
+              <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span>COMMUNITY</span>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <div class="badge-icon-box peach">
+              <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><path d="M3 3v18h18M18 17V9M13 17V5M8 17v-3"/></svg>
+            </div>
+            <span>Data Insights</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-header">
+        <div class="badge-pill">
+          <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><path d="M9 18h6m-3 3v-3M15 14A6 6 0 1 0 9 14c0 1.25.75 2.5 1.5 3.5h3c.75-1 1.5-2.25 1.5-3.5z"/></svg>
+          <span>WHO WE ARE</span>
+        </div>
+        <h2 class="section-title" style="margin-top: 1rem;">About Femtosoft Technologies</h2>
+        <p class="about-intro-text">
+          Femtosoft Technologies is a premier technology training and internship platform dedicated to empowering students, fresh graduates, and aspiring software engineers with industry-grade skills. We bridge the critical gap between academic knowledge and real-world software engineering through structured mentorship, production-level client projects, and continuous career guidance.
+        </p>
+      </div>
+
+      <!-- Key Pillars Grid -->
+      <div class="about-highlights-grid">
+        <div class="about-highlight-card">
+          <div class="highlight-icon-box blue">
+            <svg class="svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3 class="highlight-title">Hands-on Experience</h3>
+          <p class="highlight-desc">
+            Work directly on production codebases, real client projects, and modern tech stacks rather than theoretical classroom exercises.
+          </p>
+        </div>
+
+        <div class="about-highlight-card">
+          <div class="highlight-icon-box red">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="highlight-title">1-on-1 Mentorship</h3>
+          <p class="highlight-desc">
+            Receive dedicated code reviews, weekly sprint feedback, and continuous career guidance from experienced senior software engineers.
+          </p>
+        </div>
+
+        <div class="about-highlight-card">
+          <div class="highlight-icon-box gold">
+            <svg class="svg-icon" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h3 class="highlight-title">Career Placement</h3>
+          <p class="highlight-desc">
+            Build a stellar portfolio, master technical interviews, and gain direct placement assistance with leading technology companies.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stats Bar Container -->
+      <div class="stats-container">
+        <div class="stat-item">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Interns Trained</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">9+</span>
+          <span class="stat-label">Domain Specializations</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Live Projects Delivered</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">95%</span>
+          <span class="stat-label">Placement Assistance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specializations Section -->
+  <section id="domains" class="specializations-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Our Specializations</h2>
+        <p class="section-subtitle">
+          Choose the path that aligns with your passion. Our structured programs offer hands-on mentorship across the entire technology stack.
+        </p>
+      </div>
+
+      <div class="domains-grid">
+        <!-- 1: Full Stack -->
+        <div class="domain-card">
+          <div class="domain-icon-box blue">
+            <svg class="svg-icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3 class="domain-title">Full Stack Development</h3>
+          <p class="domain-desc">Build complete web applications by working on both frontend and backend technologies.</p>
+          <span class="domain-action js-open-domain" data-domain-key="full-stack">Learn More &rarr;</span>
+        </div>
+
+        <!-- 2: Web Dev -->
+        <div class="domain-card">
+          <div class="domain-icon-box red">
+            <svg class="svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+          </div>
+          <h3 class="domain-title">Web Development</h3>
+          <p class="domain-desc">Master the art of building scalable web applications using modern architectures and best practices.</p>
+          <span class="domain-action js-open-domain" data-domain-key="web-dev">Learn More &rarr;</span>
+        </div>
+
+        <!-- 3: Data Analytics -->
+        <div class="domain-card">
+          <div class="domain-icon-box blue">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M3 3v18h18M18 17V9M13 17V5M8 17v-3"/></svg>
+          </div>
+          <h3 class="domain-title">Data Analytics</h3>
+          <p class="domain-desc">Work with tools like Excel, SQL, Power BI, and Python for data visualization and reporting.</p>
+          <span class="domain-action js-open-domain" data-domain-key="data-analytics">Learn More &rarr;</span>
+        </div>
+
+        <!-- 4: MERN Stack -->
+        <div class="domain-card">
+          <div class="domain-icon-box blue">
+            <svg class="svg-icon" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><rect x="8" y="4" width="8" height="16" rx="2"/></svg>
+          </div>
+          <h3 class="domain-title">Mern Stack Development</h3>
+          <p class="domain-desc">Learn to build modern web applications using MongoDB, Express.js, React, and Node.js.</p>
+          <span class="domain-action js-open-domain" data-domain-key="mern-stack">Learn More &rarr;</span>
+        </div>
+
+        <!-- 5: UI/UX -->
+        <div class="domain-card">
+          <div class="domain-icon-box red">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3 class="domain-title">UI/UX Design</h3>
+          <p class="domain-desc">Create intuitive user experiences and stunning visual interfaces for world-class digital products.</p>
+          <span class="domain-action js-open-domain" data-domain-key="ui-ux">Learn More &rarr;</span>
+        </div>
+
+        <!-- 6: AI -->
+        <div class="domain-card">
+          <div class="domain-icon-box blue">
+            <svg class="svg-icon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
+          </div>
+          <h3 class="domain-title">Artificial Intelligence</h3>
+          <p class="domain-desc">Explore neural networks, machine learning models, and the future of cognitive computing.</p>
+          <span class="domain-action js-open-domain" data-domain-key="ai-ml">Learn More &rarr;</span>
+        </div>
+
+        <!-- 7: Mobile App -->
+        <div class="domain-card">
+          <div class="domain-icon-box blue">
+            <svg class="svg-icon" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3 class="domain-title">Mobile App Dev</h3>
+          <p class="domain-desc">Develop high-performance cross-platform applications for iOS and Android environments.</p>
+          <span class="domain-action js-open-domain" data-domain-key="mobile-dev">Learn More &rarr;</span>
+        </div>
+
+        <!-- 8: Data Science -->
+        <div class="domain-card">
+          <div class="domain-icon-box red">
+            <svg class="svg-icon" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3 class="domain-title">Data Science</h3>
+          <p class="domain-desc">Turn complex data sets into actionable insights through advanced statistical modeling.</p>
+          <span class="domain-action js-open-domain" data-domain-key="data-science">Learn More &rarr;</span>
+        </div>
+
+        <!-- 9: Backend -->
+        <div class="domain-card">
+          <div class="domain-icon-box blue">
+            <svg class="svg-icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 class="domain-title">Backend Development</h3>
+          <p class="domain-desc">Build the robust infrastructure and APIs that power modern digital ecosystems.</p>
+          <span class="domain-action js-open-domain" data-domain-key="backend">Learn More &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Have questions about our programs or the application process? Our talent acquisition team is here to help.</p>
+
+        <div class="contact-method-list">
+          <div class="contact-method-item">
+            <div class="contact-icon blue">
+              <svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Email Us</h4>
+              <p>info@femtosoft.in</p>
+            </div>
+          </div>
+
+          <div class="contact-method-item">
+            <div class="contact-icon red">
+              <svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Call Us</h4>
+              <p>+91 98844 48421</p>
+            </div>
+          </div>
+
+          <div class="contact-method-item">
+            <div class="contact-icon blue">
+              <svg class="svg-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Our HQ</h4>
+              <p>Chennai</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-btn">
+            <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn">
+            <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card-form">
+        <form id="contactForm">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-input" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="Mail ID" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">College Name</label>
+            <input type="text" class="form-input" placeholder="Enter Your College Name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Domain</label>
+            <input type="text" class="form-input" placeholder="Enter Your Domain" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Upload Your CV</label>
+            <label class="upload-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" style="margin-bottom: 0.25rem;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <span>Click or drag to upload CV</span>
+              <input type="file" style="display: none;">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" rows="3" placeholder="Tell us about your interests..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary-red" style="width: 100%;">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <img src="assets/logo.png" alt="Femtosoft Technologies Logo" class="site-logo-img">
+          </a>
+          <p>Nurturing the next generation of engineers through elite internship programs and hands-on professional development.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Showcase</a></li>
+            <li><a href="#">Mentors</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.875rem; color: var(--slate-600);">Stay updated with latest internship openings.</p>
+          <div class="newsletter-box">
+            <input type="email" class="newsletter-input" placeholder="Email">
+            <button class="newsletter-btn">
+              <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Femtosoft Technologies. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Windows -->
+  <div id="applyModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn js-close-modal">&times;</button>
+      <h3 class="modal-title">Apply for Internship</h3>
+      <p class="modal-subtitle">Submit your application to join Femtosoft Technologies.</p>
+      <form id="modalForm">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="Mail ID" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+        <button type="submit" class="btn btn-primary-red" style="width: 100%; margin-top: 1rem;">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
