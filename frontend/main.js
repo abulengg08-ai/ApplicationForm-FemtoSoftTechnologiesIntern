@@ -1,7 +1,7 @@
 /**
  * Femtosoft Technologies - Main Interactivity & Modal Controller
  */
-
+console.log("MAIN.JS LOADED");
 document.addEventListener('DOMContentLoaded', () => {
   // Navigation active state on scroll
   const sections = document.querySelectorAll('section[id]');
@@ -28,48 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', onScroll);
 
-  const applicationForm = document.getElementById('applicationForm');
-
-  if (applicationForm) {
-
-    applicationForm.addEventListener('submit', async (e) => {
-
-      e.preventDefault();
-
-      const formData = new FormData(applicationForm);
-
-      try {
-
-        const response = await fetch("http://localhost:8080/api/applications", {
-          method: "POST",
-          body: formData
-        });
-
-        if (response.ok) {
-
-          closeAllModals();
-
-          showToast("🎉 Application submitted successfully!");
-
-          applicationForm.reset();
-
-        } else {
-
-          showToast("❌ Failed to submit application.");
-
-        }
-
-      } catch (error) {
-
-        console.error(error);
-
-        showToast("❌ Unable to connect to the server.");
-
-      }
-
-    });
-
-  }
   // Modal Management
   const applyModalOverlay = document.getElementById('applyModal');
   const domainModalOverlay = document.getElementById('domainModal');
@@ -223,13 +181,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Application Form Submit
   const applicationForm = document.getElementById('applicationForm');
+  console.log("Form found:", applicationForm);
+
   if (applicationForm) {
-    applicationForm.addEventListener('submit', (e) => {
+
+    applicationForm.addEventListener('submit', async (e) => {
+
+
       e.preventDefault();
-      closeAllModals();
-      showToast('🎉 Application submitted successfully! Our team will contact you shortly.');
-      applicationForm.reset();
+      console.log("Submit event triggered");
+      e.preventDefault();
+
+      console.log("Prevent default executed");
+      const formData = new FormData(applicationForm);
+
+      try {
+
+        const response = await fetch("http://localhost:8080/api/applications", {
+          method: "POST",
+          body: formData
+        });
+
+        if (response.ok) {
+
+          closeAllModals();
+
+          showToast("🎉 Application submitted successfully!");
+
+          applicationForm.reset();
+
+        } else {
+
+          showToast("❌ Failed to submit application.");
+
+        }
+
+      } catch (error) {
+
+        console.error(error);
+
+        showToast("❌ Unable to connect to the server.");
+
+      }
+
     });
+
   }
 
   // Contact Form Submit
